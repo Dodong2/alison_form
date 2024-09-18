@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    background-color: burlywood;
+}
+
+.main-div {
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+    background-color: #7EACB5;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+.fill-up-forms {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.fill-up-forms form {
+    flex-grow: 1;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.fill-up-forms form input,
+.fill-up-forms form select,
+.fill-up-forms form button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    caret-color: blueviolet;
+}
+
+.fill-up-forms form input:hover,
+.fill-up-forms form select:hover {
+    border-radius: 0;
+    transition: 0.1s ease;
+}
+
+.fill-up-forms form button {
+    margin-top: 20px;
+    background-color: #7EACB5;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.fill-up-forms form button:hover {
+    transition: 0.5s ease;
+}
+
+.fill-up-forms form button:active {
+    transform: scale(0.100);
+}
+
+
+@media all and (max-width: 550px) {
+    .main-div {
+        border: 2px solid rgb(44, 44, 44);
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .fill-up-forms form button:active {
+        transform: scale(0.100);
+    }
+}
+
+/* @media (min-width: 992px) {
+    .main-div {
+        width: 500px;
+        margin: auto;
+    }
+} */
