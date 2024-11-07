@@ -10,22 +10,25 @@
     <div class="main-div">
       <div class="title">Studenpt Fill-Up Form</div>
       <div class="fill-up-forms">
-        <form>
+        <form action="submit.php" method="post">
+        
           <!-- Full Name -->
-          <input type="text" name="fullname" placeholder="full name" required />
+          <input type="text" name="student_name" placeholder="full name" required />
           <!-- Email -->
-          <input type="email" name="email" placeholder="email" required />
+          <input type="email" name="student_email" placeholder="email" required />
           <!-- gender -->
-          <select name="gender" required>
+          <select name="student_gender" required>
             <option value="" disabled selected>-- Select Gender --</option>
             <option value="Male">Male</option>
             <option value="Male">Female</option>
           </select>
           <!-- Age -->
-          <input type="number" name="age" placeholder="age" required />
+          <input type="number" name="student_age" placeholder="age" required />
           <!-- Course -->
-          <input type="" text name="course" placeholder="course" required />
-          <button type="submit">submit</button>
+          <input type="text" name="student_course" placeholder="course" required />
+          <button type="submit" class="btn1" name="create" value="Submit">submit</button>
+        
+          <button class="btn1"><a href="./record.php">Results</a></button>
         </form>
       </div>
     </div>

@@ -70,7 +70,7 @@ body {
 }
 
 .fill-up-forms form button {
-    margin-top: 20px;
+    margin-top: 1px;
     background-color: #7EACB5;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
@@ -78,12 +78,79 @@ body {
     letter-spacing: 2px;
 }
 
+.fill-up-forms form button a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
 .fill-up-forms form button:hover {
     transition: 0.5s ease;
 }
 
 .fill-up-forms form button:active {
     transform: scale(0.100);
+}
+
+.back-btn{
+width: 100%;
+margin-left: 5px;
+margin-right: 5px;
+}
+.back-btn button{
+    margin-top: 10px;
+    background-color: #7EACB5;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 10%;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+.back-btn button a{
+text-decoration: none;
+color: black;
+}
+.back-btn active {
+    transform: scale(0.100);
+}
+.table-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+table {
+  border-collapse: collapse;
+  
+  font-size: 18px;
+  text-align: center;
+  border-color: black;
+  width: 100%;
+}
+
+th {
+   
+    color: black;
+}
+td {
+    
+    color: black;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+tr, th, td {
+ padding: 2px;
+ font-family:'Courier New', Courier, monospace;
 }
 
 
@@ -95,13 +162,17 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 300px;
+        max-width: 30
+        0px;
         width: 100%;
     }
-
-    .fill-up-forms form button:active {
-        transform: scale(0.100);
+    .table-containers {
+        overflow-x: auto;
     }
+
+
+
+
 }
 
 /* @media (min-width: 992px) {
